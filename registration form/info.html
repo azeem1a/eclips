@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>Welcome to my page</center></h1>
+    <form >
+        your name : <p id="name"></p> <br>
+        your email : <p id="email"></p> <br>
+        your address : <p id="address"></p> <br>
+    </form>
+
+    <script>
+        document.getElementById("name").innerHTML=localStorage.getItem("name");
+        document.getElementById("email").innerHTML=localStorage.getItem("email");
+        document.getElementById("address").innerHTML=localStorage.getItem("address");
+    </script>
+</body>
+</html>

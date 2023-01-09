@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg form</title>
+</head>
+<script>
+    function passvalue()
+    {
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var address=document.getElementById("address").value;
+        localStorage.setItem("name",name);
+        localStorage.setItem("email",email);
+        localStorage.setItem("address",address);
+        return;
+    }
+</script>
+<body>
+    <h1>Register Form</h1>
+    <form action="info.html">
+    <input type="text" id="name" placeholder="Enter Name" required> <br>
+    <input type="text" id="email" placeholder="Enter username" required> <br>
+    <input type="text" id="address" placeholder="address" required> <br>
+    <input type="submit" onclick="passvalue()">
+    </form>
+</body>
+</html>
